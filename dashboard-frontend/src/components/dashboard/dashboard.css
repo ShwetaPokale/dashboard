@@ -1,0 +1,106 @@
+.category {
+  position: relative;
+  padding-left: 2rem; /* Space for the lock icon */
+}
+
+.category.locked::before {
+  content: '\f023'; /* Font Awesome lock icon Unicode */
+  font-family: 'Font Awesome 6 Free'; /* Font Awesome font family */
+  font-weight: 900; /* Font Awesome font weight */
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.5rem; /* Adjust size as needed */
+  color: #999; /* Color for the lock icon */
+}
+
+.category h3 {
+  margin: 0;
+  padding-left: 2rem; /* Space for the lock icon */
+}
+
+.category.locked p {
+  color: #999; /* Color for "Access Denied" text */
+}
+
+.category-view h2 {
+  text-align: center;
+}
+
+.category-view ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.category-view li {
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.data-source-buttons {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 1rem; /* Adjust the gap as needed */
+  margin-top: 1rem; /* Add some space above the buttons */
+}
+
+.data-source-buttons button {
+  padding: 0.5rem 1rem; /* Add padding to buttons for better appearance */
+  border: none;
+  background-color: #007bff; /* Button color */
+  color: white; /* Button text color */
+  cursor: pointer;
+  border-radius: 0.25rem; /* Rounded corners */
+  transition: background-color 0.3s ease; /* Smooth color transition */
+}
+
+.data-source-buttons button:hover {
+  background-color: #0056b3; /* Darker color on hover */
+}
+
+
+/* Section Tabs */
+.section-tabs {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+  overflow-x: auto; /* Allow horizontal scrolling if there are too many buttons */
+  padding: 10px 0;
+  background-color: #f1f1f1; /* Light background color for the tabs container */
+  border-bottom: 2px solid #ddd; /* Bottom border to separate tabs from content */
+}
+
+.section-tabs button {
+  padding: 12px 24px; /* Adjust padding for better button size */
+  background-color: #e7f1ff; /* Light blue background */
+  color: #007bff; /* Blue text */
+  border: none;
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+  font-size: 16px; /* Increase font size for readability */
+}
+
+.section-tabs button.active {
+  background-color: #007bff; /* Dark blue for active tab */
+  color: white;
+  transform: scale(1.05); /* Slightly scale up the active tab for emphasis */
+}
+
+.section-tabs button:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+  color: white;
+}
+
+/* chart.css */
+.chart-container {
+  width: 100%; /* Ensure the chart takes full width of its container */
+  max-width: 600px; /* Set a maximum width for the chart */
+  margin: 0 auto; /* Center the chart horizontally */
+  padding: 1rem; /* Add padding around the chart */
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+      max-width: 100%; /* Allow the chart to be full-width on smaller screens */
+  }
+}
