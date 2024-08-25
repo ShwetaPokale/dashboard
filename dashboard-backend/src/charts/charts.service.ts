@@ -3,8 +3,6 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Repository } from 'typeorm';
 import { Chart } from './chart.entity/chart.entity';
 import { DataSource } from '../data-source/data-source.entity/data-source.entity';
-import { BSEDataSource } from '../data-source/data-source.entity/bse-data-source.entity';
-import { NSEDataSource } from '../data-source/data-source.entity/nse-data-source.entity';
 import { CategoryChart } from './chart.entity/category-chart.entity';
 
 @Injectable()
