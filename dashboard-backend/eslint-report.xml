@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<testsuites>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/app.controller.spec.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/app.controller.spec.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/app.controller.spec" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/app.controller.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/app.controller.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/app.controller" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/app.module.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/app.module.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/app.module" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/app.service.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/app.service.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/app.service" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/auth/auth.controller.spec.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/auth/auth.controller.spec.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/auth/auth.controller.spec" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/auth/auth.controller.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/auth/auth.controller.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/auth/auth.controller" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/auth/auth.module.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/auth/auth.module.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/auth/auth.module" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.controller.spec.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.controller.spec.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.controller.spec" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.controller.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.controller.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.controller" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.entity/categories.entity.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.entity/categories.entity.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.entity/categories.entity" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.entity/user-category.entity.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.entity/user-category.entity.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.entity/user-category.entity" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.module.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.module.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.module" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.service.spec.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.service.spec.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.service.spec" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.service.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.service.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/categories/categories.service" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/chart.entity/category-chart.entity.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/chart.entity/category-chart.entity.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/chart.entity/category-chart.entity" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/chart.entity/chart.entity.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/chart.entity/chart.entity.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/chart.entity/chart.entity" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.controller.spec.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.controller.spec.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.controller.spec" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.controller.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.controller.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.controller" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.module.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.module.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.module" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.service.spec.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.service.spec.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.service.spec" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.service.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.service.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/charts/charts.service" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/config.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/config.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/config" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.controller.spec.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.controller.spec.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.controller.spec" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.controller.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.controller.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.controller" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.entity/bse-data-source.entity.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.entity/bse-data-source.entity.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.entity/bse-data-source.entity" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.entity/data-source.entity.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.entity/data-source.entity.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.entity/data-source.entity" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.entity/nse-data-source.entity.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.entity/nse-data-source.entity.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.entity/nse-data-source.entity" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.module.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.module.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.module" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.service.spec.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.service.spec.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.service.spec" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.service.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.service.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/data-source/data-source.service" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/main.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/main.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/main" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.controller.spec.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.controller.spec.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.controller.spec" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.controller.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.controller.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.controller" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.entity/sections.entity.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.entity/sections.entity.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.entity/sections.entity" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.module.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.module.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.module" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.service.spec.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.service.spec.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.service.spec" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.service.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.service.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/sections/sections.service" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/user.dto.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/user.dto.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/users/user.dto" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/user.entity/user.entity.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/user.entity/user.entity.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/users/user.entity/user.entity" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.controller.spec.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.controller.spec.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.controller.spec" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.controller.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.controller.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.controller" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.module.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.module.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.module" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.service.spec.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.service.spec.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.service.spec" />
+</testsuite>
+<testsuite package="org.eslint" time="0" tests="1" errors="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.service.ts">
+<testcase time="0" name="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.service.ts" classname="/home/shweta/Documents/dashboard/dashboard-backend/src/users/users.service" />
+</testsuite>
+</testsuites>
+
