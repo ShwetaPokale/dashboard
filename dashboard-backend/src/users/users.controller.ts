@@ -10,7 +10,6 @@ import {
 import { UsersService } from './users.service';
 import { User } from './user.entity/user.entity';
 import { CategoriesService } from '../categories/categories.service';
-import { UserDto } from './user.dto';
 
 @Controller('users')
 export class UsersController {
@@ -20,16 +19,26 @@ export class UsersController {
   ) {}
 
   @Post()
-  async create(@Body() createUserDto: UserDto): Promise<any> {
-    const { username, password, email, categoryIds } = createUserDto;
+  async create(@Body() body: any): Promise<any> {
+    const { username, password, email, categoryIds } = body;
+    if (!username || !password || !email || !categoryIds) {
+      return 'All fields (username, password, email, and categoryIds) are required';
+    }
+    const existingUser = await this.usersService.findByUsername(username);
+    if (existingUser) {
+      return 'User with this username already exists';
+    }
     for (const categoryId of categoryIds) {
       const category = await this.categoriesService.findOne(categoryId);
       if (!category) {
         return `Category with ID ${categoryId} not found`;
       }
     }
-    return this.usersService.create(username, password, email, categoryIds);
+   const result = await this.usersService.create(username, password, email, categoryIds);
+    return { Status: true, message: 'User inserted successfully', data: result };
   }
+  
+  
 
   @Get()
   async findAll(): Promise<User[]> {
