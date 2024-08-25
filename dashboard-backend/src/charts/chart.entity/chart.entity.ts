@@ -1,4 +1,10 @@
-import { Entity, PrimaryGeneratedColumn, Column, ManyToOne, OneToMany } from 'typeorm';
+import {
+  Entity,
+  PrimaryGeneratedColumn,
+  Column,
+  ManyToOne,
+  OneToMany,
+} from 'typeorm';
 import { DataSource } from '../../data-source/data-source.entity/data-source.entity';
 import { CategoryChart } from '../chart.entity/category-chart.entity';
 
@@ -11,7 +17,7 @@ export class Chart {
   name: string;
 
   @Column()
-  chartType: string;  
+  chartType: string;
 
   @ManyToOne(() => DataSource, (dataSource) => dataSource.charts)
   dataSource: DataSource;

@@ -13,13 +13,15 @@ export class DataSourcesService {
 
     @InjectRepository(BSEDataSource)
     private readonly bseDataSourceRepository: Repository<BSEDataSource>,
-    
+
     @InjectRepository(NSEDataSource)
     private readonly nseDataSourceRepository: Repository<NSEDataSource>,
   ) {}
 
   async create(dataSource: Partial<DataSource>): Promise<string> {
-    const existingDataSource = await this.dataSourceRepository.findOneBy({ name: dataSource.name });
+    const existingDataSource = await this.dataSourceRepository.findOneBy({
+      name: dataSource.name,
+    });
     if (existingDataSource) {
       return `Data source with name '${dataSource.name}' already exists`;
     }
@@ -41,7 +43,7 @@ export class DataSourcesService {
 
   async createMarketData(type: string, data: any): Promise<any> {
     let createdData;
-    switch (type.toLowerCase()){
+    switch (type.toLowerCase()) {
       case 'bse':
         createdData = await this.bseDataSourceRepository.save(data);
         break;
@@ -61,9 +63,15 @@ export class DataSourcesService {
     return this.dataSourceRepository.find();
   }
 
-  async update(id: number, updateDataSource: Partial<DataSource>): Promise<DataSource | any> {
+  async update(
+    id: number,
+    updateDataSource: Partial<DataSource>,
+  ): Promise<DataSource | any> {
     await this.dataSourceRepository.update(id, updateDataSource);
-    return {message: 'Data updated successfully', data: this.dataSourceRepository.findOneBy({ id })};
+    return {
+      message: 'Data updated successfully',
+      data: this.dataSourceRepository.findOneBy({ id }),
+    };
   }
 
   async remove(id: number): Promise<string> {

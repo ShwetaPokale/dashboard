@@ -1,4 +1,12 @@
-import { Controller, Get, Post, Body, Param, Put, Delete, BadRequestException } from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Param,
+  Put,
+  Delete,
+} from '@nestjs/common';
 import { DataSourcesService } from './data-source.service';
 import { DataSource } from './data-source.entity/data-source.entity';
 
@@ -28,13 +36,16 @@ export class DataSourcesController {
   @Post(':type')
   async createMarketData(
     @Param('type') type: string,
-    @Body() data: any
+    @Body() data: any,
   ): Promise<any> {
     return this.dataSourcesService.createMarketData(type, data);
   }
 
   @Put(':id')
-  async update(@Param('id') id: number, @Body() body: any): Promise<DataSource | string> {
+  async update(
+    @Param('id') id: number,
+    @Body() body: any,
+  ): Promise<DataSource | string> {
     const { name, description } = body;
     if (!name && !description) {
       return 'At least one field (name or description) is required for update';

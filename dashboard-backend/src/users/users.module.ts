@@ -7,9 +7,10 @@ import { UserCategory } from '../categories/categories.entity/user-category.enti
 import { CategoriesModule } from 'src/categories/categories.module';
 
 @Module({
-  imports: [TypeOrmModule.forFeature([User, UserCategory]), 
-  forwardRef(() =>CategoriesModule),
-],
+  imports: [
+    TypeOrmModule.forFeature([User, UserCategory]),
+    forwardRef(() => CategoriesModule),
+  ],
   providers: [UsersService],
   controllers: [UsersController],
   exports: [UsersService],

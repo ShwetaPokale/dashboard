@@ -11,9 +11,8 @@ export class ChartsService {
     @InjectRepository(Chart)
     private readonly chartRepository: Repository<Chart>,
     @InjectRepository(DataSource)
-
     @InjectRepository(CategoryChart)
-    private readonly categoryChartRepository: Repository<CategoryChart>
+    private readonly categoryChartRepository: Repository<CategoryChart>,
   ) {}
 
   async createChart(chart: Partial<Chart>): Promise<Chart> {
@@ -21,12 +20,16 @@ export class ChartsService {
     return this.chartRepository.save(newChart);
   }
 
-  async createCategoryChart(categoryChart: Partial<CategoryChart>): Promise<CategoryChart> {
+  async createCategoryChart(
+    categoryChart: Partial<CategoryChart>,
+  ): Promise<CategoryChart> {
     const newCategoryChart = this.categoryChartRepository.create(categoryChart);
     return this.categoryChartRepository.save(newCategoryChart);
   }
 
   async findAllCharts(): Promise<Chart[]> {
-    return this.chartRepository.find({ relations: ['dataSource', 'categoryCharts', 'categoryCharts.category'] });
+    return this.chartRepository.find({
+      relations: ['dataSource', 'categoryCharts', 'categoryCharts.category'],
+    });
   }
 }

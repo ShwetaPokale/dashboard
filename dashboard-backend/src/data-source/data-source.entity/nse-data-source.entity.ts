@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
-@Entity('nse_data_source')  
+@Entity('nse_data_source')
 export class NSEDataSource {
   @PrimaryGeneratedColumn()
   id: number;

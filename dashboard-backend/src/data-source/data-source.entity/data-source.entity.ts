@@ -18,4 +18,3 @@ export class DataSource {
   @OneToMany(() => Chart, (chart) => chart.dataSource)
   charts: Chart[];
 }
-

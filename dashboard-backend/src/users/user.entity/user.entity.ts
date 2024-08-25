@@ -1,8 +1,8 @@
 import { Entity, Column, PrimaryGeneratedColumn, OneToMany } from 'typeorm';
-import { IsString, IsEmail, IsNotEmpty } from 'class-validator';
+import { IsEmail, IsNotEmpty } from 'class-validator';
 import { UserCategory } from '../../categories/categories.entity/user-category.entity';
 
-@Entity('users') 
+@Entity('users')
 export class User {
   @PrimaryGeneratedColumn()
   userid: number;

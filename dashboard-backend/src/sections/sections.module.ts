@@ -5,12 +5,9 @@ import { SectionsService } from './sections.service';
 import { SectionsController } from './sections.controller';
 import { Category } from '../categories/categories.entity/categories.entity';
 
-
-
 @Module({
-    imports: [TypeOrmModule.forFeature([Section, Category])],
-    providers: [SectionsService],
-    controllers: [SectionsController],
- 
-  })
+  imports: [TypeOrmModule.forFeature([Section, Category])],
+  providers: [SectionsService],
+  controllers: [SectionsController],
+})
 export class SectionsModule {}

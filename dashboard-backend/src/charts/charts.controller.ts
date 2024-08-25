@@ -1,4 +1,4 @@
-import { Body, Controller, Get, Param, Post, Query } from '@nestjs/common';
+import { Body, Controller, Get, Post } from '@nestjs/common';
 import { ChartsService } from './charts.service';
 import { Chart } from './chart.entity/chart.entity';
 import { CategoryChart } from './chart.entity/category-chart.entity';
@@ -12,7 +12,9 @@ export class ChartsController {
     return this.chartsService.createChart(chartData);
   }
   @Post('category-charts')
-  async createCategoryChart(@Body() categoryChart: Partial<CategoryChart>): Promise<CategoryChart> {
+  async createCategoryChart(
+    @Body() categoryChart: Partial<CategoryChart>,
+  ): Promise<CategoryChart> {
     return this.chartsService.createCategoryChart(categoryChart);
   }
 
@@ -20,5 +22,4 @@ export class ChartsController {
   async getAllCharts(): Promise<Chart[]> {
     return this.chartsService.findAllCharts();
   }
-
 }

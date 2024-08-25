@@ -11,7 +11,9 @@ export class SectionsService {
   ) {}
 
   async create(section: Partial<Section>): Promise<string> {
-    const existingSection = await this.sectionRepository.findOneBy({ name: section.name });
+    const existingSection = await this.sectionRepository.findOneBy({
+      name: section.name,
+    });
     if (existingSection) {
       return `Section with name '${section.name}' already exists`;
     }

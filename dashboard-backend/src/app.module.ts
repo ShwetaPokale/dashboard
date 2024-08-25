@@ -10,11 +10,17 @@ import { ChartsModule } from './charts/charts.module';
 import { AuthModule } from './auth/auth.module';
 import databaseConfig from './config';
 
-
 @Module({
   imports: [
     TypeOrmModule.forRoot(databaseConfig),
-    UsersModule, CategoriesModule, SectionsModule, DataSourceModule, DataSourceModule, ChartsModule, AuthModule],
+    UsersModule,
+    CategoriesModule,
+    SectionsModule,
+    DataSourceModule,
+    DataSourceModule,
+    ChartsModule,
+    AuthModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

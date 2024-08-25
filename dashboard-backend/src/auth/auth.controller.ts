@@ -9,18 +9,18 @@ export class AuthController {
   async login(@Body() body: { username: string; password: string }) {
     const { username, password } = body;
     if (!username || !password) {
-      return { Status:false,  message:'Username and password are required' };
+      return { Status: false, message: 'Username and password are required' };
     }
     const user = await this.usersService.findByUsername(username);
     if (!user) {
-      return { Status:false, message:'Invalid username or password' };
+      return { Status: false, message: 'Invalid username or password' };
     }
     const isMatch = await bcrypt.compare(password, user.password);
     if (!isMatch) {
-      return { Status:false, message:'Invalid username or password'};
+      return { Status: false, message: 'Invalid username or password' };
     }
     const result = await this.usersService.findOne(user.userid);
 
-    return { Status: true, message: 'Login successfully' , data: result};
+    return { Status: true, message: 'Login successfully', data: result };
   }
 }

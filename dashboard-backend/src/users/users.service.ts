@@ -6,7 +6,6 @@ import { UserCategory } from '../categories/categories.entity/user-category.enti
 import { Category } from 'src/categories/categories.entity/categories.entity';
 import * as bcrypt from 'bcrypt';
 
-
 @Injectable()
 export class UsersService {
   constructor(
@@ -15,13 +14,21 @@ export class UsersService {
 
     @InjectRepository(UserCategory)
     private readonly userCategoryRepository: Repository<UserCategory>,
-
   ) {}
 
-  async create(username: string, password: string, email: string, categoryIds: number[]): Promise<User> {
+  async create(
+    username: string,
+    password: string,
+    email: string,
+    categoryIds: number[],
+  ): Promise<User> {
     const saltRounds = 10;
     const hashedPassword = await bcrypt.hash(password, saltRounds);
-    const user = this.userRepository.create({ username, password:hashedPassword, email });
+    const user = this.userRepository.create({
+      username,
+      password: hashedPassword,
+      email,
+    });
     const savedUser = await this.userRepository.save(user);
     for (const categoryId of categoryIds) {
       const userCategory = this.userCategoryRepository.create({
@@ -34,12 +41,17 @@ export class UsersService {
   }
 
   async findAll(): Promise<User[]> {
-    return this.userRepository.find({ relations: ['userCategories', 'userCategories.category'] });
+    return this.userRepository.find({
+      relations: ['userCategories', 'userCategories.category'],
+    });
   }
 
   async findOne(id: number): Promise<User | any> {
-    const user = await this.userRepository.findOne({ where: {userid: id },  relations: ['userCategories', 'userCategories.category'],});
-    if(!user){
+    const user = await this.userRepository.findOne({
+      where: { userid: id },
+      relations: ['userCategories', 'userCategories.category'],
+    });
+    if (!user) {
       return `User with ID ${id} not found`;
     }
     return user;
@@ -51,16 +63,20 @@ export class UsersService {
     }
     return this.userRepository.findOne({ where: { username } });
   }
-  
+
   async findCategoriesForUser(userId: number): Promise<Category[]> {
     const user = await this.userRepository.findOne({
       where: { userid: userId },
-      relations: ['userCategories', 'userCategories.category', 'userCategories.category.section'],
+      relations: [
+        'userCategories',
+        'userCategories.category',
+        'userCategories.category.section',
+      ],
     });
     if (!user) {
       throw new Error(`User with ID ${userId} not found`);
     }
-    return user.userCategories.map(uc => uc.category);
+    return user.userCategories.map((uc) => uc.category);
   }
 
   async update(id: number, updateUser: Partial<User>): Promise<User | string> {
@@ -76,11 +92,13 @@ export class UsersService {
     return `User with ID ${id} has been successfully deleted`;
   }
 
-  async hasAccessToCategory(userId: number, categoryId: number): Promise<boolean> {
+  async hasAccessToCategory(
+    userId: number,
+    categoryId: number,
+  ): Promise<boolean> {
     const userCategory = await this.userCategoryRepository.findOne({
       where: { user: { userid: userId }, category: { id: categoryId } },
     });
     return !!userCategory;
   }
-
 }

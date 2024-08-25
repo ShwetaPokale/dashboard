@@ -1,8 +1,15 @@
-import { Controller, Get, Post, Body, Param, Put, Delete} from '@nestjs/common';
+import {
+  Controller,
+  Get,
+  Post,
+  Body,
+  Param,
+  Put,
+  Delete,
+} from '@nestjs/common';
 import { SectionsService } from './sections.service';
 import { Section } from './sections.entity/sections.entity';
 import { DeleteResult } from 'typeorm';
-
 
 @Controller('sections')
 export class SectionsController {
@@ -10,9 +17,10 @@ export class SectionsController {
 
   @Post()
   async create(@Body() body: any): Promise<string> {
-    const { name, description } = body; 
+    const { name, description } = body;
     if (!name) {
-      return 'Name is required';    }
+      return 'Name is required';
+    }
     const result = await this.sectionsService.create({ name, description });
     return result;
   }
@@ -32,7 +40,10 @@ export class SectionsController {
   }
 
   @Put(':id')
-  async update(@Param('id') id: number, @Body() body: any): Promise<Section | string>  {
+  async update(
+    @Param('id') id: number,
+    @Body() body: any,
+  ): Promise<Section | string> {
     const { name, description } = body;
     if (!name && !description) {
       return 'At least one field (name or description) is required for update';
@@ -48,7 +59,7 @@ export class SectionsController {
   async remove(@Param('id') id: number): Promise<string> {
     const result: DeleteResult = await this.sectionsService.remove(id);
     if (result.affected === 0) {
-      return`Section with ID ${id} not found`;
+      return `Section with ID ${id} not found`;
     }
     return `Section with ID ${id} has been successfully deleted`;
   }

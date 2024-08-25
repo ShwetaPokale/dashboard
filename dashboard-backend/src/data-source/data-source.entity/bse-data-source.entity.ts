@@ -1,6 +1,6 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
-@Entity('bse_data_source')  
+@Entity('bse_data_source')
 export class BSEDataSource {
   @PrimaryGeneratedColumn()
   id: number;

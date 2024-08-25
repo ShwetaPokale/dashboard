@@ -9,10 +9,18 @@ import { DataSource } from '../data-source/data-source.entity/data-source.entity
 import { BSEDataSource } from 'src/data-source/data-source.entity/bse-data-source.entity';
 import { NSEDataSource } from 'src/data-source/data-source.entity/nse-data-source.entity';
 
-
 @Module({
-  imports: [TypeOrmModule.forFeature([Chart, CategoryChart,Category, DataSource, BSEDataSource, NSEDataSource])],
+  imports: [
+    TypeOrmModule.forFeature([
+      Chart,
+      CategoryChart,
+      Category,
+      DataSource,
+      BSEDataSource,
+      NSEDataSource,
+    ]),
+  ],
   providers: [ChartsService],
-  controllers: [ChartsController]
+  controllers: [ChartsController],
 })
 export class ChartsModule {}
